@@ -1,0 +1,15 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "commit":"git add . && git commit",
+    "push":"git push -f",
+    "sass": "sass ./assets/index.scss ./assets/style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+
+  },
+  "author": "",
+  "license": "ISC"
+}
