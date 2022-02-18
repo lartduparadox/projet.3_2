@@ -1,0 +1,65 @@
+
+> projet-3@1.0.0 sass
+> sass ./assets/index.scss ./assets/style.css --watch
+
+Sass is watching for changes. Press Ctrl-C to stop.
+
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Error: Expected expression.
+    ╷
+115 │                     background-color: ;
+    │                                       ^
+    ╵
+  assets\index.scss 115:39  root stylesheet
+
+Error: Expected expression.
+    ╷
+115 │                     background-color: ;
+    │                                       ^
+    ╵
+  assets\index.scss 115:39  root stylesheet
+
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.
+Compiled assets\index.scss to assets\style.css.

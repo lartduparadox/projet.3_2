@@ -60,7 +60,7 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&family=Shrikhand&display=swap');
 body {
     
         font-family:  'Raleway', sans-serif;
@@ -81,7 +81,7 @@ body {
     >main{
         >section#présentation{
             text-align: center;
-            background-color: rgb(255, 255, 255);
+            background-color: whitesmoke;
             >form{
                 text-align: center;
                 background-color: rgb(233, 233, 233);
@@ -92,32 +92,42 @@ body {
                 >input{
                     background: none;
                     border: none;
-
+                    width: 130px;
                 }
             }
             >h1{
                 margin: 20px;
+              
             }
             >p{
                 margin: 20px;
             }
             >button{
                 margin-bottom: 20px;
-                background: linear-gradient(-5deg, #9356dc,#ff79da );
+                background: linear-gradient(-5deg, #ff79da,rgba(255,255,255,0) );
+                background-color: #9356dc;
                 border-radius: 20px;
                 border: none;
                 padding: 10px;
                 color: white;
+                box-shadow:  0px 0px 2px 0px rgb(95, 95, 95);
+                transition: background-color 2s,box-shadow 1s;
+                  &:hover{
+                    box-shadow:  0px 0px 4px 1px rgb(70, 70, 70);
+                    background-color: #c298f7;
+                  }
             }
         }
         >section#fonctionnement{
         margin: 20px 20px 30px 20px;
+        background-color: white;
             div{
                 background-color: whitesmoke;
                 margin-bottom: 10px;
                 padding: 10px;
                 border-radius: 15px;
                 font-weight: bolder;
+                box-shadow:  2px 2px 4px rgb(122, 122, 122);
                 i{
                 width: 15px;
                 padding: 0px 30px 10px 10px;
@@ -151,7 +161,7 @@ body {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            background-color: rgb(245, 245, 245);
+            background-color: whitesmoke;
             
             >h1{
                 flex-basis: 90%;
@@ -176,6 +186,7 @@ body {
                     margin: 10px 0px 0px 5px;
                     color: black;
                     transition: color 1s;
+                    font-weight: bolder;
                     &:hover{
                         color: #9356DC;
                         }
@@ -186,7 +197,7 @@ body {
                 }
                 >.fa-heart{
                   position: relative;
-                  right: -80%;
+                  right: -90%;
                   bottom: 10%;
                 }
                 .fa-heart:before{position:absolute;}
@@ -220,9 +231,10 @@ body {
         margin: 0px;
         >h2{
             margin: 0px;
-            padding-left: 20px;
             color: white;
             font-family: 'Shrikhand', cursive;
+            padding: 10px 0px 10px 20px;
+            font-size: medium;
         }
         >ul{
             margin: 0px;
@@ -230,6 +242,126 @@ body {
             color: white;
             padding: 5px 0px 10px 20px;
             font-size: small;
+            >li{
+              padding-bottom: 5px;
+            }
         }
     }
 }
+
+/*spinner*/
+body>#spinner-home{
+  animation: spinner-home 5s 1 forwards;
+}
+@keyframes spinner-home{
+    0%{opacity:1;z-index:1;}
+    65%{opacity:.8;}
+    99%{z-index:1;}
+    100%{opacity:0;z-index:-1;}
+}
+
+
+#spinner-home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  opacity: 1;
+}
+
+
+
+html {
+    height: 100%;
+}
+body{
+}
+
+/* spinner */
+
+.c-loader-spinner {
+   box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  &.large{  
+    width: 80px;
+    height: 80px;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 40px;   
+  }
+   &.medium{  
+    width: 60px;
+    height: 60px;
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 30px;   
+  }
+  &.small{  
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;  
+
+  }
+  &.x-small{  
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;  
+
+  }
+
+  animation: a-spin 1s infinite linear;
+    -webkit-animation: a-spin 1.5s infinite linear;
+}
+
+.t-loader-spinner {
+  border-color: rgba(255, 255, 255, 0.2);
+  border-top-color: #FFF;
+
+}
+
+
+/* animation */
+
+@keyframes a-spin {
+  0% {
+    transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+   }
+  100% {
+    transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+    
+  }
+}
+
+@-webkit-keyframes a-spin {
+  0% {
+    transform: rotate(0deg);
+     -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+     -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes a-spin {
+  0% {
+    transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+  }
+}
+
