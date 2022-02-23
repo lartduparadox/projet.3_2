@@ -361,6 +361,7 @@ ul {
 /**/
 body {
   font-family: "Raleway", sans-serif;
+  background-color: whitesmoke;
 }
 body > header {
   display: flex;
@@ -385,47 +386,61 @@ body > header > #img_tete {
     background-color: #261749;
   }
 }
-body > main {
+body #main_menu {
   z-index: 1;
   background-color: whitesmoke;
   border-radius: 10px;
   border-radius: 20px;
   position: relative;
   bottom: 40px;
-  margin-bottom: 50px;
 }
-body > main > h1 {
+body #main_menu > h1 {
   font-family: "Shrikhand", cursive;
-  padding: 20px 10px 0px 10px;
+  padding: 20px 15px 0px 15px;
   margin: 0;
 }
-body > main > #entrées h2, body > main #plats h2, body > main #desserts h2 {
-  margin: 30px 0px 15px 0px;
+body #main_menu > #entrées, body #main_menu #plats, body #main_menu #desserts {
+  margin: 0px 15px;
 }
-body > main > #entrées > div, body > main #plats > div, body > main #desserts > div {
+body #main_menu > #entrées h2, body #main_menu #plats h2, body #main_menu #desserts h2 {
+  margin: 30px 0px 15px 0px;
+  position: relative;
+}
+body #main_menu > #entrées h2::before, body #main_menu #plats h2::before, body #main_menu #desserts h2::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  width: 50px;
+  border: solid red 2px;
+}
+body #main_menu > #entrées > div, body #main_menu #plats > div, body #main_menu #desserts > div {
   background-color: white;
   border-radius: 20px;
   padding-left: 5px;
   margin: 5px;
-  border: solid white;
   list-style: none;
-  padding: 0;
   margin: 0px 0px 20px 0px;
-}
-body > main > #entrées > div > .animation, body > main #plats > div > .animation, body > main #desserts > div > .animation {
-  position: relative;
-  padding: 1px 1em;
   overflow: hidden;
 }
-body > main > #entrées > div > .animation > p > span, body > main #plats > div > .animation > p > span, body > main #desserts > div > .animation > p > span {
+body #main_menu > #entrées > div > .animation, body #main_menu #plats > div > .animation, body #main_menu #desserts > div > .animation {
+  position: relative;
+  padding: 1px 1em;
+}
+body #main_menu > #entrées > div > .animation > p > span, body #main_menu #plats > div > .animation > p > span, body #main_menu #desserts > div > .animation > p > span {
   display: inline-block;
   transition: width 0.4s;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 90%;
+  width: 80%;
 }
-body > main > #entrées > div > .animation::before, body > main #plats > div > .animation::before, body > main #desserts > div > .animation::before {
+body #main_menu > #entrées > div > .animation > p > b, body #main_menu #plats > div > .animation > p > b, body #main_menu #desserts > div > .animation > p > b {
+  display: inline-block;
+  width: 10%;
+  position: relative;
+}
+body #main_menu > #entrées > div > .animation::before, body #main_menu #plats > div > .animation::before, body #main_menu #desserts > div > .animation::before {
   content: "";
   width: 0;
   position: absolute;
@@ -435,7 +450,7 @@ body > main > #entrées > div > .animation::before, body > main #plats > div > .
   background: #a0d1a0;
   transition: width 0.4s;
 }
-body > main > #entrées > div > .animation::after, body > main #plats > div > .animation::after, body > main #desserts > div > .animation::after {
+body #main_menu > #entrées > div > .animation i.fa-check, body #main_menu #plats > div > .animation i.fa-check, body #main_menu #desserts > div > .animation i.fa-check {
   position: absolute;
   right: -10%;
   top: calc(50% - 0.5em);
@@ -448,42 +463,54 @@ body > main > #entrées > div > .animation::after, body > main #plats > div > .a
   content: "\f00c";
   transition: right 0.4s, transform 0.8s;
 }
-body > main > #entrées > div > .animation:hover::before, body > main #plats > div > .animation:hover::before, body > main #desserts > div > .animation:hover::before {
+body #main_menu > #entrées > div > .animation:hover::before, body #main_menu #plats > div > .animation:hover::before, body #main_menu #desserts > div > .animation:hover::before {
   width: 25%;
 }
-body > main > #entrées > div > .animation:hover::after, body > main #plats > div > .animation:hover::after, body > main #desserts > div > .animation:hover::after {
+body #main_menu > #entrées > div > .animation:hover i.fa-check, body #main_menu #plats > div > .animation:hover i.fa-check, body #main_menu #desserts > div > .animation:hover i.fa-check {
   right: 5%;
   transform: rotate(360deg);
 }
-body > main > #entrées > div > .animation:hover > p > span, body > main #plats > div > .animation:hover > p > span, body > main #desserts > div > .animation:hover > p > span {
-  width: 70%;
+body #main_menu > #entrées > div > .animation:hover > p > span, body #main_menu #plats > div > .animation:hover > p > span, body #main_menu #desserts > div > .animation:hover > p > span {
+  width: 60%;
 }
-body > main > aside {
+body #main_menu > aside {
   background-color: #9356dc;
   width: 150px;
   border-radius: 20px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   padding: 10px 20px;
+  margin: 30px auto 10px;
+  background: linear-gradient(-5deg, #ff79da, rgba(255, 255, 255, 0));
+  background-color: #9356dc;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 2px 0px #5f5f5f;
+  transition: background-color 2s, box-shadow 1s;
 }
-body > main #entrées {
-  padding: 0px 10px 0px 10px;
-}
-body > main #plats {
-  padding: 0px 10px 0px 10px;
-}
-body > main #desserts {
-  padding: 0px 10px 0px 10px;
+body #main_menu > aside:hover {
+  box-shadow: 0px 0px 4px 1px #464646;
+  background-color: #c298f7;
 }
 
 /***********************************/
 /***********************************/
 /***********************************/
+@media all and (min-width: taille S) and (max-width: taille M) {
+  body {
+    background-image: url(/assets/img/AdobeStock_120313610\ 2.jpeg);
+  }
+}
 body {
   font-family: "Raleway", sans-serif;
   padding: 0px;
   margin: 0px;
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(/assets/img/AdobeStock_120313610\ 2.jpeg);
+    background-size: contain;
+    color: whitesmoke;
+  }
 }
 body > header {
   display: flex;
@@ -495,6 +522,11 @@ body > header {
 body > header > img {
   width: 150px;
   padding: 5px 0px 5px 0px;
+}
+@media screen and (min-width: 768px) {
+  body > header {
+    background: none;
+  }
 }
 body > main > section#présentation {
   text-align: center;
@@ -530,9 +562,16 @@ body > main > section#présentation > button {
 body > main > section#présentation > button:hover {
   box-shadow: 0px 0px 4px 1px #464646;
   background-color: #c298f7;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  body > main > section#présentation {
+    background: none;
+    flex-basis: 100%;
+  }
 }
 body > main > section#fonctionnement {
-  margin: 20px 20px 30px 20px;
+  padding: 20px 30px 30px 40px;
   background-color: white;
 }
 body > main > section#fonctionnement div {
@@ -550,6 +589,7 @@ body > main > section#fonctionnement div i {
 }
 body > main > section#fonctionnement div:hover {
   background-color: #c1afda;
+  cursor: pointer;
 }
 body > main > section#fonctionnement div p {
   display: inline-block;
@@ -569,6 +609,13 @@ body > main > section#fonctionnement div p span {
   left: 8px;
   top: 3px;
 }
+@media screen and (min-width: 768px) {
+  body > main > section#fonctionnement {
+    background: none;
+    color: gray;
+    flex-basis: 30%;
+  }
+}
 body > main > section#Restaurants {
   display: flex;
   flex-wrap: wrap;
@@ -578,6 +625,13 @@ body > main > section#Restaurants {
 body > main > section#Restaurants > h1 {
   flex-basis: 90%;
 }
+@media screen and (min-width: 768px) {
+  body > main > section#Restaurants > h1 {
+    color: #000;
+    flex-basis: 100%;
+    background: none;
+  }
+}
 body > main > section#Restaurants > a {
   color: #000;
   text-decoration: none;
@@ -586,6 +640,13 @@ body > main > section#Restaurants > a {
   border-radius: 15px;
   margin-bottom: 20px;
   flex-basis: 90%;
+}
+@media screen and (min-width: 768px) {
+  body > main > section#Restaurants > a {
+    box-shadow: black 5px 5px 10px;
+    flex-basis: 45%;
+    color: whitesmoke;
+  }
 }
 body > main > section#Restaurants > a > img {
   width: 100%;
@@ -601,13 +662,18 @@ body > main > section#Restaurants > a > h3 {
 body > main > section#Restaurants > a > h3:hover {
   color: #9356DC;
 }
+@media screen and (min-width: 768px) {
+  body > main > section#Restaurants > a > h3 {
+    color: white;
+  }
+}
 body > main > section#Restaurants > a > p {
   margin: 5px 0px 0px 5px;
 }
 body > main > section#Restaurants > a > .fa-heart {
   position: relative;
   right: -90%;
-  bottom: 10%;
+  bottom: 15%;
 }
 body > main > section#Restaurants > a .fa-heart:before {
   position: absolute;
@@ -635,6 +701,21 @@ body > main > section#Restaurants > a span {
   border-radius: 5px;
   padding: 5px;
 }
+@media screen and (min-width: 768px) {
+  body > main > section#Restaurants {
+    background: none;
+    gap: 10px;
+    row-gap: 20px;
+    flex-basis: 60%;
+  }
+}
+@media screen and (min-width: 768px) {
+  body > main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 body > footer {
   background-color: #444444;
   margin: 0px;
@@ -646,15 +727,39 @@ body > footer > h2 {
   padding: 10px 0px 10px 20px;
   font-size: medium;
 }
+@media screen and (min-width: 768px) {
+  body > footer > h2 {
+    text-align: center;
+    color: #c8c8c8;
+  }
+}
 body > footer > ul {
   margin: 0px;
   list-style: none;
-  color: white;
+  color: #c8c8c8;
   padding: 5px 0px 10px 20px;
   font-size: small;
 }
 body > footer > ul > li {
   padding-bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+  body > footer > ul > li {
+    flex-basis: 25%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  body > footer > ul {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 768px) {
+  body > footer {
+    background: none;
+  }
 }
 
 /*spinner*/
