@@ -401,6 +401,8 @@ body #main_menu > h1 {
 }
 body #main_menu > #entrées, body #main_menu #plats, body #main_menu #desserts {
   margin: 0px 15px;
+  animation: 5s menu 1 forwards;
+  overflow: hidden;
 }
 body #main_menu > #entrées h2, body #main_menu #plats h2, body #main_menu #desserts h2 {
   margin: 30px 0px 15px 0px;
@@ -492,6 +494,16 @@ body #main_menu > aside:hover {
   background-color: #c298f7;
 }
 
+@keyframes menu {
+  from {
+    opacity: 0;
+    height: 0px;
+  }
+  to {
+    opacity: 1;
+    height: 430px;
+  }
+}
 /***********************************/
 /***********************************/
 /***********************************/
@@ -574,6 +586,12 @@ body > main > section#fonctionnement {
   padding: 20px 30px 30px 40px;
   background-color: white;
 }
+@media screen and (min-width: 768px) {
+  body > main > section#fonctionnement h1 {
+    color: whitesmoke;
+    text-align: center;
+  }
+}
 body > main > section#fonctionnement div {
   background-color: whitesmoke;
   margin-bottom: 10px;
@@ -614,6 +632,7 @@ body > main > section#fonctionnement div p span {
     background: none;
     color: gray;
     flex-basis: 30%;
+    padding: 0%;
   }
 }
 body > main > section#Restaurants {
@@ -627,9 +646,10 @@ body > main > section#Restaurants > h1 {
 }
 @media screen and (min-width: 768px) {
   body > main > section#Restaurants > h1 {
-    color: #000;
+    color: whitesmoke;
     flex-basis: 100%;
     background: none;
+    text-align: center;
   }
 }
 body > main > section#Restaurants > a {
@@ -640,13 +660,6 @@ body > main > section#Restaurants > a {
   border-radius: 15px;
   margin-bottom: 20px;
   flex-basis: 90%;
-}
-@media screen and (min-width: 768px) {
-  body > main > section#Restaurants > a {
-    box-shadow: black 5px 5px 10px;
-    flex-basis: 45%;
-    color: whitesmoke;
-  }
 }
 body > main > section#Restaurants > a > img {
   width: 100%;
@@ -700,6 +713,20 @@ body > main > section#Restaurants > a span {
   color: #226655;
   border-radius: 5px;
   padding: 5px;
+}
+@media screen and (min-width: 768px) {
+  body > main > section#Restaurants > a span {
+    position: absolute;
+    right: 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body > main > section#Restaurants > a {
+    display: flex;
+    box-shadow: black 5px 5px 10px;
+    flex-basis: 45%;
+    color: whitesmoke;
+  }
 }
 @media screen and (min-width: 768px) {
   body > main > section#Restaurants {

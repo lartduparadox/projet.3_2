@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le délice des sens</title>
     <script src="https://kit.fontawesome.com/d3e9c8c425.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/SCSS/pages/menus.scss">
     <link rel="stylesheet" href="assets/fonts/Shrikhand-Regular.ttf">
     <link rel="stylesheet" href="assets/fonts/Roboto-Regular.ttf">
@@ -13,66 +15,90 @@
 </head>
 <body>
     <header>
+        <a href="/index.html"><i class="fas fa-arrow-left"></i></a>
         <img id="logo" src="assets/img/logo/ohmyfood.png" alt="logo">
-        <img src="assets/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
-        <h1>La palette du goût</h1>
+        <img id="img_tete" src="assets/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+       
     </header>
-    <main>
+    <main id="main_menu">
+        <h1>Le délice des sens</h1>
         <section id="entrées">
             <h2>Entrées</h2>
+            
             <div>
+            <div class="animation">
                 <h3>Tartare de thon</h3>
-                <p>Assaisonné au yuzu</p>
-                25€
+                <p><span>Assaisonné au yuzu</span>
+                <b>25€</b></p><i class="fa-solid fa-check"></i>
+            </div>
             </div>
             <div>
+            <div class="animation">
                 <h3>Bouchée de homard croustillant</h3>
-                <p>Et sa farandole de petits légumes</p>
-                35€
+                <p><span>Et sa farandole de petits légumes</span> 
+                <b>35€</b> </p><i class="fa-solid fa-check"></i>
+            </div>
             </div>
             <div>
-                <h3>Velouté de cèpes</h3>
-                <p>Aux truffes</p>
-                20€
+            <div class="animation">
+                <h3>Veloué de cèpes</h3>
+                <p><span>Aux truffes</span>
+                <b>20€</b></p><i class="fa-solid fa-check"></i>
+            </div>
             </div>
         </section>
         <section id="plats">
             <h2>Plats</h2>
             <div>
-                <h3>Poulet rôti aux herbes de Provence </h3>
-                <p>Et sa crème de truffe</p>
-                40€
+            <div class="animation">
+                <h3>Poulet rôti aux herbes de Provence</h3>
+                <p><span>Et sa crème de truffe</span>
+                <b>40€</b></p><i class="fa-solid fa-check"></i>
+            </div>
             </div>
             <div>
+            <div class="animation">
                 <h3>Langouste rôtie</h3>
-                <p>Et ses légumes de saison</p>
-                35€
+                <p><span>Et ses légumes de saison</span>
+                <b>35€</b></p><i class="fa-solid fa-check"></i>
+            </div>
             </div>
             <div>
+            <div class="animation">
                 <h3>Côte de boeuf Angus</h3>
-                <p>Et sa purée de panais</p>
-                44€
+                <p><span>Et sa purée de panais</span>
+                <b>44€</b></p><i class="fa-solid fa-check"></i>
+            </div>
             </div>
         </section>
         <section id="desserts">
             <h2>Desserts</h2>
             <div>
+<div class="animation">
                 <h3>Farandole de desserts</h3>
-                <p>Du chef</p>
-                18€
+                <p><span>Du chef</span>
+                <b>18€</b>
+                </p><i class="fa-solid fa-check"></i>
+            </div>
             </div>
             <div>
+            <div class="animation">
                 <h3>Crème brulée</h3>
-                <p>Revisitée</p>
-                22€
+                <p><span>Revisitée</span>
+                <b>22€</b>
+                </p><i class="fa-solid fa-check"></i>
+            </div>
             </div>
             <div>
+                <div class="animation">
                 <h3>Tiramisu</h3>
-                <p>À la noisette</p>
-                23€
+                <b>23€</b>
+                <p><span>À la noisette</span>
+            </p><i class="fa-solid fa-check"></i>
+            </div>
             </div>
         </section>
-        <aside></aside>
+        <aside>Commander</aside>
     </main>
     <footer>
         <h2>ohmyfood</h2>
@@ -88,7 +114,6 @@
             <li>Mentions légales</li>
             <li>Contact</li>
         </ul>
-
     </footer>
 </body>
 </html>
