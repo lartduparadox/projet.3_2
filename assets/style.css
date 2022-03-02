@@ -520,7 +520,7 @@ body {
 @media screen and (min-width: 768px) {
   body {
     background-image: url(/assets/img/AdobeStock_120313610\ 2.jpeg);
-    background-size: contain;
+    background-size: cover;
     color: whitesmoke;
   }
 }

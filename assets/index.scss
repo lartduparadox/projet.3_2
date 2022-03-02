@@ -70,7 +70,7 @@
 body {
   @include tablette-and-desktop{
     background-image: url(/assets/img/AdobeStock_120313610\ 2.jpeg);
-    background-size: contain;
+    background-size: cover;
     color: whitesmoke;
   }
         font-family:  'Raleway', sans-serif;
