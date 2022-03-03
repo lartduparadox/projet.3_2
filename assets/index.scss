@@ -247,7 +247,7 @@ body {
                     bottom: 15%;
                     @include tablette-and-desktop{
                       right:0;
-                      position:absolute;
+                      position:absolute; 
                     }
                   }
                   .fa-heart:before{position:absolute;}
