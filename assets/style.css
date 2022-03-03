@@ -455,14 +455,14 @@ body #main_menu > #entrées > div > .animation::before, body #main_menu #plats >
 body #main_menu > #entrées > div > .animation i.fa-check, body #main_menu #plats > div > .animation i.fa-check, body #main_menu #desserts > div > .animation i.fa-check {
   position: absolute;
   right: -10%;
-  top: calc(50% - 0.5em);
+  top: calc(50% - 1em/2);
   transform: rotate(0deg);
   background: white;
   color: green;
   border-radius: 50px;
   padding: 0.4em;
   font-family: "Font Awesome 5 Pro";
-  content: "\f00c";
+  content: "";
   transition: right 0.4s, transform 0.8s;
 }
 body #main_menu > #entrées > div > .animation:hover::before, body #main_menu #plats > div > .animation:hover::before, body #main_menu #desserts > div > .animation:hover::before {
@@ -507,11 +507,6 @@ body #main_menu > aside:hover {
 /***********************************/
 /***********************************/
 /***********************************/
-@media all and (min-width: taille S) and (max-width: taille M) {
-  body {
-    background-image: url(/assets/img/AdobeStock_120313610\ 2.jpeg);
-  }
-}
 body {
   font-family: "Raleway", sans-serif;
   padding: 0px;
@@ -519,7 +514,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   body {
-    background-image: url(/assets/img/AdobeStock_120313610\ 2.jpeg);
+    background-image: url(./img/AdobeStock.jpeg);
     background-size: cover;
     color: whitesmoke;
   }
@@ -692,7 +687,7 @@ body > main > section#Restaurants > a .fa-heart:before {
   position: absolute;
 }
 body > main > section#Restaurants > a .fa-heart::after {
-  content: "\f004";
+  content: "";
   position: relative;
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;

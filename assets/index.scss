@@ -1,4 +1,4 @@
-@import "./scss/main.scss";
+@import "./SCSS/main.scss";
 
 
 
@@ -23,7 +23,6 @@
 }
 @media all and (min-width:$mobile) and (max-width:$tablette){
   body{
-    background-image: url(/assets/img/AdobeStock_120313610\ 2.jpeg);
     &>header{
       
     }
@@ -69,7 +68,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&family=Shrikhand&display=swap');
 body {
   @include tablette-and-desktop{
-    background-image: url(/assets/img/AdobeStock_120313610\ 2.jpeg);
+    background-image: url(./img/AdobeStock.jpeg);
     background-size: cover;
     color: whitesmoke;
   }
