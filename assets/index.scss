@@ -213,65 +213,77 @@ body {
                 margin-bottom: 20px;
                 flex-basis: 90%;               
                 >img{
+                  @include tablette-and-desktop{
+                    width: 150px;
+                    height: 200px;
+                  }
                     width: 100%;
                     height: 200px;
                     border-radius: 15px 15px 0px 0px;
+                    object-fit:cover;
                 }
-                >h3{
-                    margin: 10px 0px 0px 5px;
-                    color: black;
-                    transition: color 1s;
-                    font-weight: bolder;
-                    &:hover{
-                        color: #9356DC;
-                        }
-                        @include tablette-and-desktop{
-                          color: rgb(255, 255, 255);   
-                        }
-                        
-                        
-                }
-                >p{
-                    margin: 5px 0px 0px 5px;
-                   
-                }
-                >.fa-heart{
-                  position: relative;
-                  right: -90%;
-                  bottom: 15%;
-                }
-                .fa-heart:before{position:absolute;}
-                .fa-heart::after{
-                  content: "";
-                  position: relative;
-                  background: linear-gradient(#FF79DA, #9356DC);
-                  -webkit-background-clip: text;
-                  -webkit-text-fill-color: transparent;
-                  font-weight: 900;
-                  opacity: 0;
-                  transition: opacity 0.4s;
-                }
-                .fa-heart:hover::after{opacity: 1;}                
-                    span{
-                        position: absolute;
-                        display: inline-block;
-                        top: 20px;
-                        right: 10px;
-                        background-color: rgb(136, 185, 173);
-                        color: rgb(34, 102, 85);
-                        border-radius: 5px;
-                        padding: 5px;
-                        @include tablette-and-desktop{
-                          position: absolute;
-                          right:200px;
-                        }
-                    }
+                div{
+                  >h3{
+                      margin: 10px 0px 0px 5px;
+                      color: black;
+                      transition: color 1s;
+                      font-weight: bolder;
+                      &:hover{
+                          color: #9356DC;
+                          }
+                          @include tablette-and-desktop{
+                            color: rgb(255, 255, 255);   
+                          }
+                          
+                          
+                  }
+                  >p{
+                      margin: 5px 0px 0px 5px;
+                    
+                  }
+                  >.fa-heart{
+                    position: relative;
+                    right: -90%;
+                    bottom: 15%;
                     @include tablette-and-desktop{
-                    display: flex;
+                      right:0;
+                      position:absolute;
+                    }
+                  }
+                  .fa-heart:before{position:absolute;}
+                  .fa-heart::after{
+                    content: "";
+                    position: relative;
+                    background: linear-gradient(#FF79DA, #9356DC);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: 900;
+                    opacity: 0;
+                    transition: opacity 0.4s;
+                  }
+                  .fa-heart:hover::after{opacity: 1;}                
+                      span{
+                          position: absolute;
+                          display: inline-block;
+                          top: 20px;
+                          right: 10px;
+                          background-color: rgb(136, 185, 173);
+                          color: rgb(34, 102, 85);
+                          border-radius: 5px;
+                          padding: 5px;
+                          @include tablette-and-desktop{
+                            right:unset;
+                            left:10px;
+                          }
+                      }
+                  }
+                  @include tablette-and-desktop{
+                    display:flex;
                     box-shadow: rgb(0, 0, 0) 5px 5px 10px;
                     flex-basis: 45%;
                     color: whitesmoke;
-                    }
+                    height:200px;
+                  }
             }
            
             @include tablette-and-desktop{

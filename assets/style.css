@@ -660,33 +660,46 @@ body > main > section#Restaurants > a > img {
   width: 100%;
   height: 200px;
   border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
 }
-body > main > section#Restaurants > a > h3 {
+@media screen and (min-width: 768px) {
+  body > main > section#Restaurants > a > img {
+    width: 150px;
+    height: 200px;
+  }
+}
+body > main > section#Restaurants > a div > h3 {
   margin: 10px 0px 0px 5px;
   color: black;
   transition: color 1s;
   font-weight: bolder;
 }
-body > main > section#Restaurants > a > h3:hover {
+body > main > section#Restaurants > a div > h3:hover {
   color: #9356DC;
 }
 @media screen and (min-width: 768px) {
-  body > main > section#Restaurants > a > h3 {
+  body > main > section#Restaurants > a div > h3 {
     color: white;
   }
 }
-body > main > section#Restaurants > a > p {
+body > main > section#Restaurants > a div > p {
   margin: 5px 0px 0px 5px;
 }
-body > main > section#Restaurants > a > .fa-heart {
+body > main > section#Restaurants > a div > .fa-heart {
   position: relative;
   right: -90%;
   bottom: 15%;
 }
-body > main > section#Restaurants > a .fa-heart:before {
+@media screen and (min-width: 768px) {
+  body > main > section#Restaurants > a div > .fa-heart {
+    right: 0;
+    position: absolute;
+  }
+}
+body > main > section#Restaurants > a div .fa-heart:before {
   position: absolute;
 }
-body > main > section#Restaurants > a .fa-heart::after {
+body > main > section#Restaurants > a div .fa-heart::after {
   content: "";
   position: relative;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -696,10 +709,10 @@ body > main > section#Restaurants > a .fa-heart::after {
   opacity: 0;
   transition: opacity 0.4s;
 }
-body > main > section#Restaurants > a .fa-heart:hover::after {
+body > main > section#Restaurants > a div .fa-heart:hover::after {
   opacity: 1;
 }
-body > main > section#Restaurants > a span {
+body > main > section#Restaurants > a div span {
   position: absolute;
   display: inline-block;
   top: 20px;
@@ -710,9 +723,9 @@ body > main > section#Restaurants > a span {
   padding: 5px;
 }
 @media screen and (min-width: 768px) {
-  body > main > section#Restaurants > a span {
-    position: absolute;
-    right: 200px;
+  body > main > section#Restaurants > a div span {
+    right: unset;
+    left: 10px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -721,6 +734,7 @@ body > main > section#Restaurants > a span {
     box-shadow: black 5px 5px 10px;
     flex-basis: 45%;
     color: whitesmoke;
+    height: 200px;
   }
 }
 @media screen and (min-width: 768px) {
