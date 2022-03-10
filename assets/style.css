@@ -363,6 +363,11 @@ body {
   font-family: "Raleway", sans-serif;
   background-color: whitesmoke;
 }
+@media screen and (min-width: 768px) {
+  body {
+    color: black;
+  }
+}
 body > header {
   display: flex;
   flex-wrap: wrap;
@@ -376,10 +381,13 @@ body > header > a {
   top: 6.5%;
 }
 body > header > #logo {
-  width: 60%;
+  width: 150px;
+  padding: 5px 0px 5px 0px;
 }
 body > header > #img_tete {
   width: 100% !important;
+  height: 250px;
+  object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   body > header {
@@ -405,6 +413,12 @@ body #main_menu > h1 {
   padding: 20px 15px 0px 15px;
   margin: 0;
 }
+@media screen and (min-width: 768px) {
+  body #main_menu > h1 {
+    text-align: center;
+    padding-top: 60px;
+  }
+}
 body #main_menu > #entrées, body #main_menu #plats, body #main_menu #desserts {
   margin: 0px 15px;
   animation: 5s menu 1 forwards;
@@ -421,6 +435,11 @@ body #main_menu > #entrées h2::before, body #main_menu #plats h2::before, body 
   bottom: -10px;
   width: 50px;
   border: solid red 2px;
+}
+@media screen and (min-width: 768px) {
+  body #main_menu > #entrées h2, body #main_menu #plats h2, body #main_menu #desserts h2 {
+    color: whitesmoke;
+  }
 }
 body #main_menu > #entrées > div, body #main_menu #plats > div, body #main_menu #desserts > div {
   background-color: white;
@@ -461,13 +480,13 @@ body #main_menu > #entrées > div > .animation::before, body #main_menu #plats >
 body #main_menu > #entrées > div > .animation i.fa-check, body #main_menu #plats > div > .animation i.fa-check, body #main_menu #desserts > div > .animation i.fa-check {
   position: absolute;
   right: -10%;
-  top: calc(50% - 1em/2);
+  top: calc(50% - 0.5em);
   transform: rotate(0deg);
   background: white;
   color: green;
   border-radius: 50px;
   padding: 0.4em;
-  content: "";
+  content: "\f00c";
   transition: right 0.4s, transform 0.8s;
 }
 body #main_menu > #entrées > div > .animation:hover::before, body #main_menu #plats > div > .animation:hover::before, body #main_menu #desserts > div > .animation:hover::before {
@@ -479,6 +498,11 @@ body #main_menu > #entrées > div > .animation:hover i.fa-check, body #main_menu
 }
 body #main_menu > #entrées > div > .animation:hover > p > span, body #main_menu #plats > div > .animation:hover > p > span, body #main_menu #desserts > div > .animation:hover > p > span {
   width: 60%;
+}
+@media screen and (min-width: 768px) {
+  body #main_menu > #entrées, body #main_menu #plats, body #main_menu #desserts {
+    color: black;
+  }
 }
 body #main_menu > a {
   background-color: #9356dc;
@@ -501,7 +525,7 @@ body #main_menu > a:hover {
 @media screen and (min-width: 768px) {
   body #main_menu > a {
     position: absolute;
-    bottom: 0;
+    bottom: -40px;
   }
 }
 
@@ -634,6 +658,11 @@ body > main > section#fonctionnement div p span {
   top: 3px;
 }
 @media screen and (min-width: 768px) {
+  body > main > section#fonctionnement div {
+    margin-top: 80px;
+  }
+}
+@media screen and (min-width: 768px) {
   body > main > section#fonctionnement {
     background: none;
     color: gray;
@@ -703,7 +732,7 @@ body > main > section#Restaurants > a div > .fa-heart {
 }
 @media screen and (min-width: 768px) {
   body > main > section#Restaurants > a div > .fa-heart {
-    right: 0;
+    right: 45px;
     position: absolute;
   }
 }
@@ -711,7 +740,7 @@ body > main > section#Restaurants > a div .fa-heart:before {
   position: absolute;
 }
 body > main > section#Restaurants > a div .fa-heart::after {
-  content: "";
+  content: "\f004";
   position: relative;
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
@@ -778,6 +807,7 @@ body > footer > h2 {
   body > footer > h2 {
     text-align: center;
     color: #c8c8c8;
+    padding: 0px;
   }
 }
 body > footer > ul {

@@ -181,6 +181,9 @@ body {
                         top: 3px;
                     }
                 }
+                @include tablette-and-desktop{
+                  margin-top: 80px;
+                }
             }
             @include tablette-and-desktop{
               background: none;
@@ -246,7 +249,7 @@ body {
                     right: -90%;
                     bottom: 15%;
                     @include tablette-and-desktop{
-                      right:0;
+                      right: 45px;
                       position:absolute; 
                     }
                   }
@@ -312,6 +315,7 @@ body {
             @include tablette-and-desktop{
               text-align: center;
               color: rgb(200, 200, 200);
+              padding: 0px;
             }
         }
         >ul{

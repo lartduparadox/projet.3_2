@@ -1,6 +1,9 @@
 body{
     font-family:  'Raleway', sans-serif;
     background-color: whitesmoke;
+    @include tablette-and-desktop{
+        color: black;
+    }
     >header{
         display: flex;
         flex-wrap: wrap;
@@ -13,11 +16,13 @@ body{
             top: 6.5%;
         }
         >#logo{
-            
-            width: 60%;
+            width: 150px;
+            padding: 5px 0px 5px 0px;
         }
         >#img_tete{
             width: 100% !important;
+            height: 250px;
+            object-fit: cover;
         }
     
         @include tablette-and-desktop{
@@ -39,6 +44,10 @@ body{
             font-family: "Shrikhand", cursive;
             padding: 20px 15px 0px 15px;
             margin: 0;
+        @include tablette-and-desktop{
+            text-align: center;
+            padding-top: 60px;
+        }
         }
         >#entrées , #plats , #desserts{
             margin: 0px 15px ;
@@ -46,6 +55,9 @@ body{
             overflow: hidden;
             h2{margin: 30px 0px 15px 0px;position: relative;
                 &::before{content: "";position: absolute;left: 0px;bottom: -10px;width: 50px;border: solid red 2px;}
+            @include tablette-and-desktop{
+                color: whitesmoke;
+            }
             }
             >div{
                 background-color: rgb(255, 255, 255);
@@ -90,6 +102,9 @@ body{
         }
         
     }
+    @include tablette-and-desktop{
+        color: black;
+    }
 }
 >a{
     background-color: #9356dc;
@@ -111,7 +126,7 @@ body{
 
             @include tablette-and-desktop{    
                 position:absolute;  
-                bottom:0;
+                bottom: -40px;
             }
 } 
 
