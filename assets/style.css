@@ -729,7 +729,7 @@ body > main > section#Restaurants > a div > p {
 body > main > section#Restaurants > a div > .fa-heart {
   position: relative;
   right: -90%;
-  bottom: 15%;
+  bottom: 35px;
 }
 @media screen and (min-width: 768px) {
   body > main > section#Restaurants > a div > .fa-heart {
