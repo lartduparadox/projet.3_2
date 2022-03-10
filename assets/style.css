@@ -706,6 +706,7 @@ body > main > section#Restaurants > a > img {
   body > main > section#Restaurants > a > img {
     width: 150px;
     height: 200px;
+    border-radius: 15px 0px 0px 15px;
   }
 }
 body > main > section#Restaurants > a div > h3 {
