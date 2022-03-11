@@ -1,361 +1,380 @@
 @import "./SCSS/main.scss";
 
-
-
 /***********************************/
 /***********************************/
 /***********************************/
 
+@media all and (max-width: $mobile) {
+  body {
+    & > header {
+    }
+    & > nav {
+    }
+    & > main {
+      & > section {
+      }
+      & > article {
+      }
+    }
+    & > footer {
+      & > ul {
+      }
+    }
+  }
+}
+@media all and (min-width: $mobile) and (max-width: $tablette) {
+  body {
+    & > header {
+    }
+    & > nav {
+    }
+    & > main {
+      & > section {
+      }
+      & > article {
+      }
+    }
+    & > footer {
+      & > ul {
+      }
+    }
+  }
+}
+@media all and (min-width: $tablette) and (max-width: $tv) {
+  body {
+    & > header {
+    }
+    & > nav {
+    }
+    & > main {
+      & > section {
+      }
+      & > article {
+      }
+    }
+    & > footer {
+      & > ul {
+      }
+    }
+  }
+}
+@media all and (min-width: $tv) {
+  body {
+    & > header {
+    }
+    & > nav {
+    }
+    & > main {
+      & > section {
+      }
+      & > article {
+      }
+    }
+    & > footer {
+      & > ul {
+      }
+    }
+  }
+}
 
-
-@media all and (max-width:$mobile){
-  body{
-    &>header{}
-    &>nav{}
-    &>main{
-      &>section{}
-      &>article{}
-    }
-    &>footer{
-      &>ul{}
-    }
-  }
-}
-@media all and (min-width:$mobile) and (max-width:$tablette){
-  body{
-    &>header{
-      
-    }
-    &>nav{}
-    &>main{
-      &>section{}
-      &>article{}
-    }
-    &>footer{
-      &>ul{}
-    }
-  }
-}
-@media all and (min-width:$tablette) and (max-width:$tv){
-  body{
-    &>header{
-     
-    }
-    &>nav{}
-    &>main{
-      &>section{}
-      &>article{}
-    }
-    &>footer{
-      &>ul{}
-    }
-  }
-}
-@media all and (min-width:$tv){
-  body{
-    &>header{}
-    &>nav{}
-    &>main{
-      &>section{}
-      &>article{}
-    }
-    &>footer{
-      &>ul{}
-    }
-  }
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&family=Shrikhand&display=swap");
 body {
-  @include tablette-and-desktop{
+  @include tablette-and-desktop {
     background-image: url(./img/AdobeStock.jpeg);
     background-size: cover;
     color: whitesmoke;
   }
-        font-family:  'Raleway', sans-serif;
-    
-    padding: 0px;
-    margin: 0px;
-    > header {
-        display: flex;
-        box-shadow: rgb(0, 0, 0) 0px 0px 5px 1px;
-        position: relative;
-        padding: 5px 0px;
-        justify-content: center;
-        > img {
-            width: 150px;
-            padding: 5px 0px 5px 0px;   
-        }
-        @include tablette-and-desktop{
-          background: none;
-        }
-    }
-    >main{
-        >section#présentation{
-            text-align: center;
-            background-color: whitesmoke;
-            >form{
-                text-align: center;
-                background-color: rgb(233, 233, 233);
-                padding: 5px 0px;
-                >i{
+  font-family: "Raleway", sans-serif;
 
-                }
-                >input{
-                    background: none;
-                    border: none;
-                    width: 130px;
-                }
-            }
-            >h1{
-                margin: 20px;
-              
-            }
-            >p{
-                margin: 20px;
-            }
-            >button{
-                margin-bottom: 20px;
-                background: linear-gradient(-5deg, $rose,rgba(255,255,255,0) );
-                background-color: $violet;
-                border-radius: 20px;
-                border: none;
-                padding: 10px;
-                color: white;
-                box-shadow:  0px 0px 2px 0px rgb(95, 95, 95);
-                transition: background-color 2s,box-shadow 1s;
-                  &:hover{
-                    box-shadow:  0px 0px 4px 1px rgb(70, 70, 70);
-                    background-color: #c298f7;
-                    cursor: pointer;
-                  }
-            }
-            @include tablette-and-desktop{
-              background: none;
-              flex-basis: 100%;
-            }
-        }
-        >section#fonctionnement{
-          
-        padding: 20px 30px 30px 40px;
-        background-color: white;
-            h1{
-              @include tablette-and-desktop
-              {
-                color: whitesmoke;
-                text-align: center;
-              }
-            }
-            div{
-                background-color: whitesmoke;
-                margin-bottom: 10px;
-                padding: 10px;
-                border-radius: 15px;
-                font-weight: bolder;
-                box-shadow:  2px 2px 4px rgb(122, 122, 122);
-                i{
-                width: 15px;
-                padding: 0px 30px 10px 10px;
-                }
-                transition: background-color 1s;
-                &:hover{
-                    background-color: #c1afda;
-                    cursor: pointer;
-                }
-                p{
-                    display:inline-block;
-                    background-color: #9356dc;
-                    border-radius: 15px;
-                    width: 15px;
-                    height: 15px;
-                    position: relative;
-                    right: 25px;
-                    bottom: -5px;
-                    margin: 0px;
-                    padding: 5px;
-                    color: white;
-                    span{
-                        
-                        position: absolute;
-                        left: 8px;
-                        top: 3px;
-                    }
-                }
-                @include tablette-and-desktop{
-                  margin-top: 80px;
-                }
-            }
-            @include tablette-and-desktop{
-              background: none;
-              color: gray;
-              flex-basis: 30%;
-              padding: 0%;
-            }
-        }
-        >section#Restaurants{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            background-color: whitesmoke;
-           
-            >h1{
-                flex-basis: 90%;
-              @include tablette-and-desktop{
-                color: whitesmoke;
-                flex-basis: 100%;
-                background: none;
-                text-align: center;
-              }
-            }
-            >a{
-                color: #000;
-                text-decoration: none;
-                position: relative;
-                box-shadow: rgb(189, 189, 189) 5px 5px 10px;
-                border-radius: 15px;
-                margin-bottom: 20px;
-                flex-basis: 90%;               
-                >img{
-                  @include tablette-and-desktop{
-                    width: 150px;
-                    height: 200px;
-                    border-radius: 15px 0px 0px 15px;
-                  }
-                    width: 100%;
-                    height: 200px;
-                    border-radius: 15px 15px 0px 0px;
-                    object-fit:cover;
-                }
-                div{
-                  >h3{
-                      margin: 10px 0px 0px 5px;
-                      color: black;
-                      transition: color 1s;
-                      font-weight: bolder;
-                      &:hover{
-                          color: #9356DC;
-                          }
-                          @include tablette-and-desktop{
-                            color: rgb(255, 255, 255);   
-                          }
-                          
-                          
-                  }
-                  >p{
-                      margin: 5px 0px 0px 5px;
-                    
-                  }
-                  >.fa-heart{
-                    position: relative;
-                    right: -90%;
-                    bottom: 35px;
-                    @include tablette-and-desktop{
-                      right: 45px;
-                      position:absolute; 
-                    }
-                  }
-                  .fa-heart:before{position:absolute;}
-                  .fa-heart::after{
-                    content: "";
-                    position: relative;
-                    background: linear-gradient(#FF79DA, #9356DC);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    font-weight: 900;
-                    opacity: 0;
-                    transition: opacity 0.4s;
-                  }
-                  .fa-heart:hover::after{opacity: 1;}                
-                      span{
-                          position: absolute;
-                          display: inline-block;
-                          top: 20px;
-                          right: 10px;
-                          background-color: rgb(136, 185, 173);
-                          color: rgb(34, 102, 85);
-                          border-radius: 5px;
-                          padding: 5px;
-                          @include tablette-and-desktop{
-                            right:unset;
-                            left:10px;
-                          }
-                      }
-                  }
-                  @include tablette-and-desktop{
-                    display:flex;
-                    box-shadow: rgb(0, 0, 0) 5px 5px 10px;
-                    flex-basis: 45%;
-                    color: whitesmoke;
-                    height:200px;
-                  }
-            }
-           
-            @include tablette-and-desktop{
-              background: none;
-              gap: 10px;
-              row-gap: 20px;
-              flex-basis: 60%;
-              
-            }
-        }
-        @include tablette-and-desktop{
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-around;
-        }
+  padding: 0px;
+  margin: 0px;
+  > header {
+    display: flex;
+    box-shadow: rgb(0, 0, 0) 0px 0px 5px 1px;
+    position: relative;
+    padding: 5px 0px;
+    justify-content: center;
+    > img {
+      width: 150px;
+      padding: 5px 0px 5px 0px;
     }
-    >footer{
-        background-color: rgb(68, 68, 68);
-        margin: 0px;
-        >h2{
-            margin: 0px;
-            color: white;
-            font-family: 'Shrikhand', cursive;
-            padding: 10px 0px 10px 20px;
-            font-size: medium;
-            @include tablette-and-desktop{
-              text-align: center;
-              color: rgb(200, 200, 200);
-              padding: 0px;
-            }
+    @include tablette-and-desktop {
+      background: none;
+    }
+  }
+  > main {
+    > section#présentation {
+      text-align: center;
+      background-color: whitesmoke;
+      > form {
+        text-align: center;
+        background-color: rgb(233, 233, 233);
+        padding: 5px 0px;
+        > i {
         }
-        >ul{
-            margin: 0px;
-            list-style: none;
-            color: rgb(200, 200, 200);
-            padding: 5px 0px 10px 20px;
-            font-size: small;
-            >li{
-              padding-bottom: 5px;
-              @include tablette-and-desktop{
-                flex-basis: 25%;
-                text-align: center;
-              }
-            }
-            @include tablette-and-desktop{
-              display: flex;
-              flex-basis: 100%;
-              justify-content: space-around;
-            }
-        }
-        @include tablette-and-desktop{
+        > input {
           background: none;
-          
+          border: none;
+          width: 130px;
         }
+      }
+      > h1 {
+        margin: 20px;
+      }
+      > p {
+        margin: 20px;
+      }
+      > button {
+        font-weight: bold;
+        margin-bottom: 20px;
+        background: linear-gradient(-5deg, $rose, rgba(255, 255, 255, 0));
+        background-color: $violet;
+        border-radius: 20px;
+        border: none;
+        padding: 10px;
+        color: white;
+        box-shadow: 0px 0px 2px 0px rgb(95, 95, 95);
+        transition: background-color 2s, box-shadow 1s;
+        &:hover {
+          box-shadow: 0px 0px 4px 1px rgb(70, 70, 70);
+          background-color: #c298f7;
+          cursor: pointer;
+        }
+      }
+      @include tablette-and-desktop {
+        background: none;
+        flex-basis: 100%;
+      }
     }
+    > section#fonctionnement {
+      padding: 20px 30px 30px 40px;
+      background-color: white;
+      h1 {
+        @include tablette-and-desktop {
+          color: whitesmoke;
+          text-align: center;
+        }
+      }
+      div {
+        background-color: whitesmoke;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 15px;
+        font-weight: bolder;
+        box-shadow: 2px 2px 4px rgb(122, 122, 122);
+        i {
+          width: 15px;
+          padding: 0px 30px 10px 10px;
+        }
+        transition: background-color 1s;
+        &:hover {
+          background-color: #c1afda;
+          cursor: pointer;
+        }
+        p {
+          display: inline-block;
+          background-color: #9356dc;
+          border-radius: 15px;
+          width: 15px;
+          height: 15px;
+          position: relative;
+          right: 25px;
+          bottom: -5px;
+          margin: 0px;
+          padding: 5px;
+          color: white;
+          span {
+            position: absolute;
+            left: 8px;
+            top: 3px;
+          }
+        }
+        @include tablette-and-desktop {
+          margin-top: 80px;
+        }
+      }
+      @include tablette-and-desktop {
+        background: none;
+        color: gray;
+        flex-basis: 30%;
+        padding: 0%;
+      }
+    }
+    > section#Restaurants {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: whitesmoke;
+
+      > h1 {
+        flex-basis: 90%;
+        @include tablette-and-desktop {
+          color: whitesmoke;
+          flex-basis: 100%;
+          background: none;
+          text-align: center;
+        }
+      }
+      > a {
+        color: #000;
+        text-decoration: none;
+        position: relative;
+        box-shadow: rgb(189, 189, 189) 5px 5px 10px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        flex-basis: 90%;
+        > img {
+          @include tablette-and-desktop {
+            width: 150px;
+            height: 200px;
+            border-radius: 15px 0px 0px 15px;
+          }
+          width: 100%;
+          height: 200px;
+          border-radius: 15px 15px 0px 0px;
+          object-fit: cover;
+        }
+        div {
+          > h3 {
+            margin: 10px 0px 0px 5px;
+            color: black;
+            transition: color 1s;
+            font-weight: bolder;
+            &:hover {
+              color: #9356dc;
+            }
+            @include tablette-and-desktop {
+              color: rgb(255, 255, 255);
+            }
+          }
+          > p {
+            margin: 5px 0px 0px 5px;
+          }
+          > .fa-heart {
+            position: relative;
+            right: -90%;
+            bottom: 35px;
+            @include tablette-and-desktop {
+              right: 45px;
+              position: absolute;
+            }
+          }
+          .fa-heart:before {
+            position: absolute;
+          }
+          .fa-heart::after {
+            content: "";
+            position: relative;
+            background: linear-gradient(#ff79da, #9356dc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+            opacity: 0;
+            transition: opacity 0.4s;
+          }
+          .fa-heart:hover::after {
+            opacity: 1;
+          }
+          span {
+            position: absolute;
+            display: inline-block;
+            top: 20px;
+            right: 10px;
+            background-color: rgb(136, 185, 173);
+            color: rgb(34, 102, 85);
+            border-radius: 5px;
+            padding: 5px;
+            @include tablette-and-desktop {
+              right: unset;
+              left: 10px;
+            }
+          }
+        }
+        @include tablette-and-desktop {
+          display: flex;
+          box-shadow: rgb(0, 0, 0) 5px 5px 10px;
+          flex-basis: 45%;
+          color: whitesmoke;
+          height: 200px;
+        }
+      }
+
+      @include tablette-and-desktop {
+        background: none;
+        gap: 10px;
+        row-gap: 20px;
+        flex-basis: 60%;
+      }
+    }
+    @include tablette-and-desktop {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+  > footer {
+    background-color: rgb(68, 68, 68);
+    margin: 0px;
+    
+    > h2 {
+      margin: 0px;
+      color: white;
+      font-family: "Shrikhand", cursive;
+      padding: 10px 0px 10px 20px;
+      font-size: medium;
+      @include tablette-and-desktop {
+        text-align: center;
+        color: rgb(200, 200, 200);
+        padding: 0px;
+      }
+    }
+    > ul {
+      margin: 0px;
+      list-style: none;
+      color: rgb(200, 200, 200);
+      padding: 5px 0px 10px 20px;
+      font-size: small;
+      > li {
+        padding-bottom: 5px;
+        @include tablette-and-desktop {
+          flex-basis: 25%;
+          text-align: center;
+        }
+      }
+      @include tablette-and-desktop {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: space-around;
+      }
+    }
+    @include tablette-and-desktop {
+      background: none;
+      border-top: solid 1px;
+      padding-top: 10px;
+    }
+  }
 }
 
 /*spinner*/
-body>#spinner-home{
+body > #spinner-home {
   animation: spinner-home 5s 1 forwards;
 }
-@keyframes spinner-home{
-    0%{opacity:1;z-index:1;}
-    65%{opacity:.8;}
-    99%{z-index:1;}
-    100%{opacity:0;z-index:-1;}
+@keyframes spinner-home {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  65% {
+    opacity: 0.8;
+  }
+  99% {
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
 }
-
 
 #spinner-home {
   position: fixed;
@@ -370,94 +389,86 @@ body>#spinner-home{
   opacity: 1;
 }
 
-
-
 html {
-    height: 100%;
+  height: 100%;
 }
-body{
+body {
 }
-  
-                                         /* spinner */
+
+/* spinner */
 
 .c-loader-spinner {
-   box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-  &.large{  
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  &.large {
     width: 80px;
     height: 80px;
     border-style: solid;
     border-width: 10px;
-    border-radius: 40px;   
+    border-radius: 40px;
   }
-   &.medium{  
+  &.medium {
     width: 60px;
     height: 60px;
     border-style: solid;
     border-width: 8px;
-    border-radius: 30px;   
+    border-radius: 30px;
   }
-  &.small{  
+  &.small {
     width: 40px;
     height: 40px;
     border-style: solid;
     border-width: 5px;
-    border-radius: 20px;  
-
+    border-radius: 20px;
   }
-  &.x-small{  
+  &.x-small {
     width: 20px;
     height: 20px;
     border-style: solid;
     border-width: 2px;
-    border-radius: 10px;  
-
+    border-radius: 10px;
   }
 
   animation: a-spin 1s infinite linear;
-    -webkit-animation: a-spin 1.5s infinite linear;
+  -webkit-animation: a-spin 1.5s infinite linear;
 }
 
 .t-loader-spinner {
   border-color: rgba(255, 255, 255, 0.2);
-  border-top-color: #FFF;
-
+  border-top-color: #fff;
 }
-
 
 /* animation */
 
 @keyframes a-spin {
   0% {
     transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-   }
+    -ms-transform: rotate(0deg);
+  }
   100% {
     transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-    
+    -ms-transform: rotate(360deg);
   }
 }
 
 @-webkit-keyframes a-spin {
   0% {
     transform: rotate(0deg);
-     -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
-     -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
   }
 }
 
 @-moz-keyframes a-spin {
   0% {
     transform: rotate(0deg);
-     -moz-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
-     -moz-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
   }
 }
-
