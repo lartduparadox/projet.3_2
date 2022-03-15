@@ -13,7 +13,7 @@ body{
             height: 15px;
             position: absolute;
             left: 20px;
-            top: 6.5%;
+            top: 6.5px;
         }
         >#logo{
             width: 150px;
@@ -46,9 +46,14 @@ body{
             font-family: "Shrikhand", cursive;
             padding: 20px 15px 0px 15px;
             margin: 0;
+
             >i{
                 float: right;
                 cursor: pointer;
+                font-weight: 400;
+                @include tablette-and-desktop{
+                    float: initial;
+                }
                 &.fa-heart:before {
                     position: absolute;
                   }
