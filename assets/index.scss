@@ -111,7 +111,7 @@ body {
         background-color: rgb(233, 233, 233);
         padding: 5px 0px;
         @include tablette-and-desktop{
-          background-color: $vert;
+          background-color: gray;
         }
         > i {
         }
@@ -132,9 +132,9 @@ body {
         margin-bottom: 20px;
         background: linear-gradient(-5deg, $rose, rgba(255, 255, 255, 0));
         background-color: $violet;
-        border-radius: 20px;
+        border-radius: 25px;
         border: none;
-        padding: 10px;
+        padding: 15px;
         color: white;
         box-shadow: 0px 0px 2px 0px rgb(95, 95, 95);
         transition: background-color 2s, box-shadow 1s;
@@ -202,6 +202,11 @@ body {
         flex-basis: 30%;
         padding: 0%;
       }
+      @include tablette-only{
+        flex-basis: 45%;
+        padding-left: 30px;
+        box-sizing: border-box;
+      }
     }
     > section#Restaurants {
       display: flex;
@@ -228,7 +233,7 @@ body {
         flex-basis: 90%;
         > img {
           @include tablette-and-desktop {
-            flex-basis: 250px;
+            width: 150px;
             height: 150px;
             border-radius: 15px 0px 0px 15px;
           }
@@ -241,7 +246,7 @@ body {
           
           @include tablette-and-desktop{
             text-align: center;
-            flex-basis: calc(100% - 250px);
+            width: calc(100% - 150px);
           }
           > h3 {
             margin: 10px 0px 0px 5px;
@@ -263,8 +268,9 @@ body {
             right: -90%;
             bottom: 35px;
             @include tablette-and-desktop {
-              right: 17%;
-              position: absolute;
+              width: 50px;
+              margin: 20px auto;
+              position: unset;
             }
           }
           .fa-heart:before {
@@ -304,6 +310,11 @@ body {
           flex-basis: 45%;
           color: whitesmoke;
           height: 150px;
+        }
+        @include tablette-only{
+          flex-basis: 280px;
+          padding: 0px;
+          box-sizing: border-box;
         }
       }
 

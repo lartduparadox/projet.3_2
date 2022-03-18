@@ -67,11 +67,7 @@ body{
                     opacity: 0;
                     transition: opacity 0.4s;
 
-                  }
-                  &.fa-heart:hover::after {
-                    opacity: 1;
-                  }
-            }        @include tablette-and-desktop{
+            sktop{
             text-align: center;
             padding-top: 60px;
         }
@@ -162,7 +158,7 @@ body{
 } 
 
 }
-}
+        }
 @keyframes menu{
     from{
         opacity: 0;
@@ -172,4 +168,4 @@ body{
         opacity: 1;
         height: 430px;
     }
-}
+}}}

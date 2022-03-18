@@ -5,7 +5,7 @@
         @content;
     }
 }
-@mixin tablette-only($min: map-get($breakpoints, mobile) + 1, $max: map-get($max, desktop) - 1) {
+@mixin tablette-only($min: map-get($breakpoints, mobile) + 1, $max: map-get($breakpoints, desktop) - 1) {
     @media screen and (min-width: $min) and (max-width: $max){
         @content;
     }
