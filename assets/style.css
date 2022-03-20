@@ -385,6 +385,9 @@ body > header > a {
   left: 20px;
   top: 6.5px;
 }
+body > header img {
+  height: 40px;
+}
 body > header > #logo {
   width: 150px;
   padding: 5px 0px 5px 0px;
@@ -442,20 +445,25 @@ body #main_menu > h1 > i.fa-heart::after {
   opacity: 0;
   transition: opacity 0.4s;
 }
-body #main_menu > h1 > i.fa-heart::after sktop {
-  text-align: center;
-  padding-top: 60px;
+body #main_menu > h1 > i.fa-heart:hover::after {
+  opacity: 1;
 }
-body #main_menu > h1 > i > #entrées, body #main_menu > h1 > i #plats, body #main_menu > h1 > i #desserts {
+@media screen and (min-width: 768px) {
+  body #main_menu > h1 {
+    text-align: center;
+    padding-top: 60px;
+  }
+}
+body #main_menu > #entrées, body #main_menu #plats, body #main_menu #desserts {
   margin: 0px 15px;
   animation: 5s menu 1 forwards;
   overflow: hidden;
 }
-body #main_menu > h1 > i > #entrées h2, body #main_menu > h1 > i #plats h2, body #main_menu > h1 > i #desserts h2 {
+body #main_menu > #entrées h2, body #main_menu #plats h2, body #main_menu #desserts h2 {
   margin: 30px 0px 15px 0px;
   position: relative;
 }
-body #main_menu > h1 > i > #entrées h2::before, body #main_menu > h1 > i #plats h2::before, body #main_menu > h1 > i #desserts h2::before {
+body #main_menu > #entrées h2::before, body #main_menu #plats h2::before, body #main_menu #desserts h2::before {
   content: "";
   position: absolute;
   left: 0px;
@@ -464,11 +472,11 @@ body #main_menu > h1 > i > #entrées h2::before, body #main_menu > h1 > i #plats
   border: solid #99e2d0 2px;
 }
 @media screen and (min-width: 768px) {
-  body #main_menu > h1 > i > #entrées h2, body #main_menu > h1 > i #plats h2, body #main_menu > h1 > i #desserts h2 {
+  body #main_menu > #entrées h2, body #main_menu #plats h2, body #main_menu #desserts h2 {
     color: whitesmoke;
   }
 }
-body #main_menu > h1 > i > #entrées > div, body #main_menu > h1 > i #plats > div, body #main_menu > h1 > i #desserts > div {
+body #main_menu > #entrées > div, body #main_menu #plats > div, body #main_menu #desserts > div {
   background-color: white;
   border-radius: 20px;
   padding-left: 5px;
@@ -477,11 +485,16 @@ body #main_menu > h1 > i > #entrées > div, body #main_menu > h1 > i #plats > di
   margin: 0px 0px 20px 0px;
   overflow: hidden;
 }
-body #main_menu > h1 > i > #entrées > div > .animation, body #main_menu > h1 > i #plats > div > .animation, body #main_menu > h1 > i #desserts > div > .animation {
+body #main_menu > #entrées > div > .animation, body #main_menu #plats > div > .animation, body #main_menu #desserts > div > .animation {
   position: relative;
   padding: 1px 1em;
 }
-body #main_menu > h1 > i > #entrées > div > .animation > p > span, body #main_menu > h1 > i #plats > div > .animation > p > span, body #main_menu > h1 > i #desserts > div > .animation > p > span {
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  body #main_menu > #entrées > div > .animation > h3, body #main_menu #plats > div > .animation > h3, body #main_menu #desserts > div > .animation > h3 {
+    font-size: 1em;
+  }
+}
+body #main_menu > #entrées > div > .animation > p > span, body #main_menu #plats > div > .animation > p > span, body #main_menu #desserts > div > .animation > p > span {
   display: inline-block;
   transition: width 0.4s;
   text-overflow: ellipsis;
@@ -489,12 +502,12 @@ body #main_menu > h1 > i > #entrées > div > .animation > p > span, body #main_m
   white-space: nowrap;
   width: 80%;
 }
-body #main_menu > h1 > i > #entrées > div > .animation > p > b, body #main_menu > h1 > i #plats > div > .animation > p > b, body #main_menu > h1 > i #desserts > div > .animation > p > b {
+body #main_menu > #entrées > div > .animation > p > b, body #main_menu #plats > div > .animation > p > b, body #main_menu #desserts > div > .animation > p > b {
   display: inline-block;
   width: 10%;
   position: relative;
 }
-body #main_menu > h1 > i > #entrées > div > .animation::before, body #main_menu > h1 > i #plats > div > .animation::before, body #main_menu > h1 > i #desserts > div > .animation::before {
+body #main_menu > #entrées > div > .animation::before, body #main_menu #plats > div > .animation::before, body #main_menu #desserts > div > .animation::before {
   content: "";
   width: 0;
   position: absolute;
@@ -504,7 +517,7 @@ body #main_menu > h1 > i > #entrées > div > .animation::before, body #main_menu
   background: #99e2d0;
   transition: width 0.4s;
 }
-body #main_menu > h1 > i > #entrées > div > .animation i.fa-check, body #main_menu > h1 > i #plats > div > .animation i.fa-check, body #main_menu > h1 > i #desserts > div > .animation i.fa-check {
+body #main_menu > #entrées > div > .animation i.fa-check, body #main_menu #plats > div > .animation i.fa-check, body #main_menu #desserts > div > .animation i.fa-check {
   position: absolute;
   right: -10%;
   top: calc(50% - 0.5em);
@@ -516,23 +529,23 @@ body #main_menu > h1 > i > #entrées > div > .animation i.fa-check, body #main_m
   content: "\f00c";
   transition: right 0.4s, transform 0.8s;
 }
-body #main_menu > h1 > i > #entrées > div > .animation:hover::before, body #main_menu > h1 > i #plats > div > .animation:hover::before, body #main_menu > h1 > i #desserts > div > .animation:hover::before {
+body #main_menu > #entrées > div > .animation:hover::before, body #main_menu #plats > div > .animation:hover::before, body #main_menu #desserts > div > .animation:hover::before {
   width: 25%;
 }
-body #main_menu > h1 > i > #entrées > div > .animation:hover i.fa-check, body #main_menu > h1 > i #plats > div > .animation:hover i.fa-check, body #main_menu > h1 > i #desserts > div > .animation:hover i.fa-check {
+body #main_menu > #entrées > div > .animation:hover i.fa-check, body #main_menu #plats > div > .animation:hover i.fa-check, body #main_menu #desserts > div > .animation:hover i.fa-check {
   right: 5%;
   transform: rotate(360deg);
 }
-body #main_menu > h1 > i > #entrées > div > .animation:hover > p > span, body #main_menu > h1 > i #plats > div > .animation:hover > p > span, body #main_menu > h1 > i #desserts > div > .animation:hover > p > span {
+body #main_menu > #entrées > div > .animation:hover > p > span, body #main_menu #plats > div > .animation:hover > p > span, body #main_menu #desserts > div > .animation:hover > p > span {
   width: 60%;
 }
 @media screen and (min-width: 768px) {
-  body #main_menu > h1 > i > #entrées, body #main_menu > h1 > i #plats, body #main_menu > h1 > i #desserts {
+  body #main_menu > #entrées, body #main_menu #plats, body #main_menu #desserts {
     color: black;
     flex-basis: 30%;
   }
 }
-body #main_menu > h1 > i > a {
+body #main_menu > a {
   background-color: #9356dc;
   width: 150px;
   border-radius: 20px;
@@ -549,16 +562,17 @@ body #main_menu > h1 > i > a {
   box-shadow: 0px 0px 2px 0px #5f5f5f;
   transition: background-color 2s, box-shadow 1s;
 }
-body #main_menu > h1 > i > a:hover {
+body #main_menu > a:hover {
   box-shadow: 0px 0px 4px 1px #464646;
   background-color: #c298f7;
 }
 @media screen and (min-width: 768px) {
-  body #main_menu > h1 > i > a {
+  body #main_menu > a {
     position: absolute;
     bottom: -15px;
   }
 }
+
 @keyframes menu {
   from {
     opacity: 0;
@@ -569,7 +583,6 @@ body #main_menu > h1 > i > a:hover {
     height: 430px;
   }
 }
-
 /***********************************/
 /***********************************/
 /***********************************/
