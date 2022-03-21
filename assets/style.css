@@ -11,6 +11,11 @@
   font-family: "typography des contenus";
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -357,13 +362,16 @@ ul {
 }
 
 /**/
-/**/
-/**/
-a {
-  text-decoration: none;
-  color: inherit;
-}
+/*@import "./components/buttons";
+@import "./components/lists";
+@import "./components/cards";
 
+@import "./layouts/headers";
+@import "./layouts/navs";
+@import "./layouts/mains";
+@import "./layouts/footers";*/
+/*@import "./pages/all";
+@import "./pages/home";*/
 body {
   font-family: "Raleway", sans-serif;
   background-color: whitesmoke;
@@ -383,7 +391,7 @@ body > header > a {
   height: 15px;
   position: absolute;
   left: 20px;
-  top: 6.5px;
+  top: 15px;
 }
 body > header img {
   height: 40px;
@@ -639,7 +647,7 @@ body > main > section#présentation > h1 {
 body > main > section#présentation > p {
   margin: 20px;
 }
-body > main > section#présentation > button {
+body > main > section#présentation > a {
   font-weight: bold;
   margin-bottom: 20px;
   background: linear-gradient(-5deg, #ff79da, rgba(255, 255, 255, 0));
@@ -651,7 +659,7 @@ body > main > section#présentation > button {
   box-shadow: 0px 0px 2px 0px #5f5f5f;
   transition: background-color 2s, box-shadow 1s;
 }
-body > main > section#présentation > button:hover {
+body > main > section#présentation > a:hover {
   box-shadow: 0px 0px 4px 1px #464646;
   background-color: #c298f7;
   cursor: pointer;
@@ -665,6 +673,12 @@ body > main > section#présentation > button:hover {
 body > main > section#fonctionnement {
   padding: 20px 30px 30px 40px;
   background-color: white;
+  margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  body > main > section#fonctionnement {
+    margin-top: 0px;
+  }
 }
 @media screen and (min-width: 768px) {
   body > main > section#fonctionnement h1 {

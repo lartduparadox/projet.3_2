@@ -55,7 +55,7 @@ body {
       > p {
         margin: 20px;
       }
-      > button {
+      > a {
         font-weight: bold;
         margin-bottom: 20px;
         background: linear-gradient(-5deg, $rose, rgba(255, 255, 255, 0));
@@ -80,6 +80,11 @@ body {
     > section#fonctionnement {
       padding: 20px 30px 30px 40px;
       background-color: white;
+      margin-top: 40px;
+      @include tablette-and-desktop{
+        margin-top: 0px;
+      }
+
       h1 {
         @include tablette-and-desktop {
           color: whitesmoke;
