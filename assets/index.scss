@@ -21,6 +21,7 @@ body {
     position: relative;
     padding: 5px 0px;
     justify-content: center;
+    input::placeholder{color: white;}
     > img {
       width: 150px;
       padding: 5px 0px 5px 0px;
