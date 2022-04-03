@@ -102,10 +102,13 @@ body {
         i {
           width: 15px;
           padding: 0px 30px 10px 10px;
+          &:hover{
+            color: $violet;
+          }
         }
         transition: background-color 1s;
         &:hover {
-          background-color: #c1afda;
+          background-color: #d6c5ee;
           cursor: pointer;
         }
         p {

@@ -497,6 +497,12 @@ body #main_menu > #entrées > div > .animation, body #main_menu #plats > div > .
   position: relative;
   padding: 1px 1em;
 }
+body #main_menu > #entrées > div > .animation > h3, body #main_menu #plats > div > .animation > h3, body #main_menu #desserts > div > .animation > h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
+}
 @media screen and (min-width: 769px) and (max-width: 991px) {
   body #main_menu > #entrées > div > .animation > h3, body #main_menu #plats > div > .animation > h3, body #main_menu #desserts > div > .animation > h3 {
     font-size: 1em;
@@ -509,6 +515,7 @@ body #main_menu > #entrées > div > .animation > p > span, body #main_menu #plat
   overflow: hidden;
   white-space: nowrap;
   width: 80%;
+  font-size: 0.8em;
 }
 body #main_menu > #entrées > div > .animation > p > b, body #main_menu #plats > div > .animation > p > b, body #main_menu #desserts > div > .animation > p > b {
   display: inline-block;
@@ -613,6 +620,9 @@ body > header {
   padding: 5px 0px;
   justify-content: center;
 }
+body > header input::placeholder {
+  color: white;
+}
 body > header > img {
   width: 150px;
   padding: 5px 0px 5px 0px;
@@ -699,8 +709,11 @@ body > main > section#fonctionnement div i {
   width: 15px;
   padding: 0px 30px 10px 10px;
 }
+body > main > section#fonctionnement div i:hover {
+  color: #9356dc;
+}
 body > main > section#fonctionnement div:hover {
-  background-color: #c1afda;
+  background-color: #d6c5ee;
   cursor: pointer;
 }
 body > main > section#fonctionnement div p {

@@ -102,6 +102,10 @@ body{
               padding:1px 1em;
               
                 >h3{
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 80%;
                     @include tablette-only{
                         font-size: 1em;
                     }  
@@ -110,6 +114,7 @@ body{
                     >span{display:inline-block;transition:width .4s;
                     text-overflow:ellipsis;overflow:hidden;white-space:nowrap;
                     width:80%;
+                    font-size: 0.8em;
                     }
                     >b{display: inline-block;width: 10%;position: relative;}
                 }
